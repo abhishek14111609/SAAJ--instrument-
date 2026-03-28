@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-heading: 'Playfair Display', serif;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    /* SAAJ Purple & White Color Palette */
+    --color-purple-50:  #faf5ff;
+    --color-purple-100: #f3e8ff;
+    --color-purple-200: #e9d5ff;
+    --color-purple-300: #d8b4fe;
+    --color-purple-400: #c084fc;
+    --color-purple-500: #a855f7;   /* Primary Purple */
+    --color-purple-600: #9333ea;   /* Deep Purple */
+    --color-purple-700: #7e22ce;
+
+    --color-violet-500: #7c3aed;   /* Accent / CTA */
+    --color-violet-900: #2e1065;   /* Deep Violet */
+
+    --color-midnight-900: #1a0a2e; /* Ultra-dark purple (replaces charcoal) */
+
+    --radius-xl:  1rem;
+    --radius-2xl: 1.5rem;
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Subtle gradient shimmer on hero text */
+.gradient-text {
+    background: linear-gradient(135deg, #9333ea 0%, #c084fc 50%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Purple glow button utility */
+.btn-purple-glow {
+    box-shadow: 0 8px 32px rgba(147, 51, 234, 0.35);
+}
+.btn-purple-glow:hover {
+    box-shadow: 0 12px 40px rgba(147, 51, 234, 0.55);
+}
